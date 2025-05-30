@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: black;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  font-size: 14px;
+  background: #111;
+}
+
+.telegram-btn {
+  background: #0088cc;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.close-btn {
+  color: #0088cc;
+  font-weight: bold;
+}
+
+.app-title h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.app-title p {
+  margin: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+.item {
+  background: #111;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.item .icon {
+  font-size: 40px;
+}
+
+.item .name {
+  font-weight: bold;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 5px;
+}
+
+.counter button {
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.counter .minus {
+  background: #ff3b30;
+  color: white;
+}
+
+.counter .plus {
+  background: #ffcc00;
+  color: black;
+}
+
+.counter span {
+  min-width: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  padding: 10px;
+}
+
+#viewOrderBtn {
+  width: 100%;
+  background: #34c759;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.view-order-btn {
+  width: 100%;
+  padding: 14px 0;
+  background: #1c1c1e;
+  border: 2px solid #34c759;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+
+.view-order-btn:hover {
+  background: #2c2c2e;
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(52, 199, 89, 0.4);
+}
+.order-modal {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  color: white;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.order-modal header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-modal h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: #34c759;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#order-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#order-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 10px 0;
+  border-bottom: 1px solid #1c1c1e;
+}
+
+#order-list .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.details .name {
+  font-weight: bold;
+}
+
+.details .desc {
+  color: #aaa;
+  font-size: 13px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #1c1c1e;
+  border: none;
+  color: white;
+  resize: none;
+  font-size: 14px;
+}
+
+.pay-btn {
+  width: 100%;
+  background: #34c759;
+  border: none;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
