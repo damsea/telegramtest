@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Durger King</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="app-logo">
+    <div class="logo-center" style="padding-left: 15px;">
+      <h1>LAVASH <span style="color: #34c759;">Food</span></h1>
+    </div>
+  </header>
+
+  <main class="menu" id="menu">
+    <!-- Items будут динамически добавлены из JS -->
+  </main>
+<div id="order-summary" class="order-modal hidden">
+  <header>
+    <h2>Корзина</h2>
+    <button id="edit-order" class="edit-btn">Назад</button>
+  </header>
+  <ul id="order-list"></ul>
+  <textarea placeholder="Добавить комментарий к заказу..."></textarea>
+  <button id="pay-btn" class="pay-btn">PAY $0.00</button>
+</div>
+  <footer style="margin-bottom: 30px;">
+    <button id="view-order" class="view-order-btn">Заказать</button>
+  </footer>
+
+  
+</body>
+<script src="script.js">
+
+
+</script>
+</html>
